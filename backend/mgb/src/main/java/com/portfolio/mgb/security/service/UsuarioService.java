@@ -1,7 +1,7 @@
 package com.portfolio.mgb.Security.Service;
 
+import com.portfolio.mgb.Security.Entity.Usuario;
 import com.portfolio.mgb.Security.Repository.iUsuarioRepository;
-import com.portfolio.mgb.security.Entity.Usuario;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

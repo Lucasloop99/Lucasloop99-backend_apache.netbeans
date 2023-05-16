@@ -3,6 +3,10 @@ package com.portfolio.mgb.Security.Dto;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ *
+ * @author Usuario
+ */
 public class NuevoUsuario {
     private String nombre;
     private String nombreUsuario;
@@ -10,7 +14,7 @@ public class NuevoUsuario {
     private String password;
     private Set<String> roles = new HashSet<>();
     
-    //Getters && Setters
+    //Gettes & Setters
 
     public String getNombre() {
         return nombre;

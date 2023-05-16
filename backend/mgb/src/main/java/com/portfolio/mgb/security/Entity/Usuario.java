@@ -1,4 +1,9 @@
-package com.portfolio.mgb.security.Entity;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.portfolio.mgb.Security.Entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,19 +15,18 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.validation.constraints.NotNull;
-import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-public class Usuario implements Serializable {
+public class Usuario {
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotNull
     private String nombre;
     @NotNull
-    @Column (unique = true)
+    @Column(unique = true)
     private String nombreUsuario;
     @NotNull
     private String email;
@@ -31,9 +35,11 @@ public class Usuario implements Serializable {
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name ="usuario_id"), inverseJoinColumns = @JoinColumn(name = "rol_id"))
     private Set<Rol> roles = new HashSet<>();
+    
+    //Constructores
 
     public Usuario() {
-    }   
+    }
 
     public Usuario(String nombre, String nombreUsuario, String email, String password) {
         this.nombre = nombre;
@@ -42,6 +48,8 @@ public class Usuario implements Serializable {
         this.password = password;
     }
     
+    //Getter Y Setter
+
     public int getId() {
         return id;
     }
@@ -89,4 +97,5 @@ public class Usuario implements Serializable {
     public void setRoles(Set<Rol> roles) {
         this.roles = roles;
     }
+    
 }
