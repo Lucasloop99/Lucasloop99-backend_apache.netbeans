@@ -4,7 +4,7 @@ import com.portfolio.mgb.Entity.Persona;
 import java.util.List;
 
 public interface IPersonaService {
-    //Traer una persona
+    //Traer una lista de personas
     public List<Persona> getPersona();
     
     //Guardar un objeto de tipo Persona
@@ -13,6 +13,6 @@ public interface IPersonaService {
     //Eliminar un objeto pero lo buscamos por ID
     public void deletePersona(Long id);
     
-    //Buscar una persona
+    //Buscar una persona por ID
     public Persona findPersona(Long id);
 }
