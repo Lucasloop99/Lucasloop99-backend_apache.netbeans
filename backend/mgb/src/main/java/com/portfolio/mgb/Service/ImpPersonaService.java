@@ -31,11 +31,11 @@ public class ImpPersonaService {
          ipersonaRepository.save(persona);
      }
      
-     public void delete(int id){
+     public void delete(long id){
          ipersonaRepository.deleteById(id);
      }
      
-     public boolean existsById(int id){
+     public boolean existsById(long id){
          return ipersonaRepository.existsById(id);
      }
      

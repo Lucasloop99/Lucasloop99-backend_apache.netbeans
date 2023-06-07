@@ -1,16 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.mgb.Controller;
 
 import com.portfolio.mgb.Dto.dtoEducacion;
 import com.portfolio.mgb.Entity.Educacion;
 import com.portfolio.mgb.Security.Controller.Mensaje;
 import com.portfolio.mgb.Service.Seducacion;
-import io.micrometer.common.util.StringUtils;
 import java.util.List;
+import io.micrometer.common.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin(origins = {"https://routing-angular-84eb0.web.app/", "http://localhost:4200"})
 public class CEducacion {
     @Autowired
     Seducacion sEducacion;

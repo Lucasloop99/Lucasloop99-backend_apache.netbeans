@@ -1,14 +1,15 @@
 package com.portfolio.mgb.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import org.springframework.data.annotation.Id;
 
 @Entity
 public class Educacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @javax.persistence.Id
     private int id;
     private String nombreE;
     private String descripcionE;
@@ -43,7 +44,5 @@ public class Educacion {
 
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
-    }
-    
-    
+    }  
 }

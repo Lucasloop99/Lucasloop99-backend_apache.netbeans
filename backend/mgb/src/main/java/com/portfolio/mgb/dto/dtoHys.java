@@ -1,6 +1,6 @@
 package com.portfolio.mgb.Dto;
 
-import jakarta.validation.constraints.NotBlank;
+import javax.validation.constraints.NotBlank;
 
 
 public class dtoHys {

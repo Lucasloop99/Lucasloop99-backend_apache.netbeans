@@ -4,7 +4,6 @@ com\portfolio\mgb\Service\Shys.class
 com\portfolio\mgb\Repository\REducacion.class
 com\portfolio\mgb\Security\Repository\iUsuarioRepository.class
 com\portfolio\mgb\Repository\Rhys.class
-com\portfolio\mgb\Security\Controller\message.class
 com\portfolio\mgb\Security\Service\UsuarioService.class
 com\portfolio\mgb\Security\WebConfig.class
 com\portfolio\mgb\MgbApplication.class

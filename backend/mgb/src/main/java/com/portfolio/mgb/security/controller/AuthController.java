@@ -9,9 +9,9 @@ import com.portfolio.mgb.Security.Enums.RolNombre;
 import com.portfolio.mgb.Security.Service.RolService;
 import com.portfolio.mgb.Security.Service.UsuarioService;
 import com.portfolio.mgb.Security.jwt.JwtProvider;
-import jakarta.validation.Valid;
 import java.util.HashSet;
 import java.util.Set;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,7 +30,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin(origins = {"import io.micrometer.common.util.StringUtils;"})
 public class AuthController {
     @Autowired
     PasswordEncoder passwordEncoder;

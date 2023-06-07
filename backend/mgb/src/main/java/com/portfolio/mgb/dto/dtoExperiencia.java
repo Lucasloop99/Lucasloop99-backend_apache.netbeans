@@ -1,15 +1,13 @@
 package com.portfolio.mgb.Dto;
 
-import jakarta.validation.constraints.NotBlank;
+import javax.validation.constraints.NotBlank;
 
 public class dtoExperiencia {
     @NotBlank
     private String nombreE;
     @NotBlank
     private String descripcionE;
-    
-    //Constructores
-
+  
     public dtoExperiencia() {
     }
 

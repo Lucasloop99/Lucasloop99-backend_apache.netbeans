@@ -1,6 +1,6 @@
 package com.portfolio.mgb.Security.Dto;
 
-import jakarta.validation.constraints.NotBlank;
+import javax.validation.constraints.NotBlank;
 
 public class LoginUsuario {
     @NotBlank
@@ -8,8 +8,6 @@ public class LoginUsuario {
     @NotBlank
     private String password;
     
-    //Getter & Setter
-
     public String getNombreUsuario() {
         return nombreUsuario;
     }
