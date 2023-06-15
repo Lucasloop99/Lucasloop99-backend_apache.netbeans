@@ -1,5 +1,4 @@
-FROM adoptopenjdk:17-alpine-jdk
-FROM amazoncorretto:11
+FROM adoptopenjdk:11-alpine-jdk
 MAINTAINER Lucasloop
 COPY target/mgb-0.0.1-SNAPSHOT.jar mgb-app.jar
 ENTRYPOINT ["java","-jar","mgb-app.jar"]
